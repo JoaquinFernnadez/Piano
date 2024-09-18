@@ -1,3 +1,27 @@
+# Aplicacion web de piano
+
+web de prácticas que te permite tocar el piano con ratón y teclado
+
+## Tecnologías
+
+- npm
+- vite
+- vitest
+  
+## Dependencias
+- tonejs
+- gh-pages
+  
+## Deploy
+
+(https://joaquinfernnadez.github.io/Piano/)
+
+
+
+
+
+
+
 ## Me ddescarga las dependencias de terceros (node_modules)
 npm install
 
@@ -19,18 +43,18 @@ Tendra tanto teclas blancas como negras
 Sonará como un piano de verdad 
 Se podra tocar con el teclado también
 
-- [ ] mostrar una web con las teclas blancas (sin sonido)
-- [ ] permitir que el usuario pulse las teclas y suene
-- [ ] añadir las teclas negras
-- [ ] permitir que el usuario toque el piano con el teclaso 
+- [x] mostrar una web con las teclas blancas (sin sonido)
+- [x] permitir que el usuario pulse las teclas y suene
+- [x] añadir las teclas negras
+- [x] permitir que el usuario toque el piano con el teclaso 
 - [ ] incorporar sonidos reales
-- [ ] refactorizar 
-- [ ] testear 
-- [ ] deployar
+- [x] refactorizar 
+- [x] testear 
+- [x] deployar
 
 
 
-- codigo limpio     r
+- codigo limpio     
 - codigo correcto
 - codigo optimizado
 - codigo flexible
