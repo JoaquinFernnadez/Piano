@@ -17,11 +17,6 @@ web de prácticas que te permite tocar el piano con ratón y teclado
 (https://joaquinfernnadez.github.io/Piano/)
 
 
-
-
-
-
-
 ## Me ddescarga las dependencias de terceros (node_modules)
 npm install
 

@@ -20,17 +20,17 @@ let keys = document.querySelectorAll('.key')
 for (let key of keys) {
     let noteToPlay = key.getAttribute('data-note')
     key.addEventListener('mousedown', () => playNote(noteToPlay))
-    key.addEventListener('mouseup', () => stopNote())
-    key.addEventListener('mouseleave', () => stopNote())
+    key.addEventListener('mouseup',  stopNote)
+    key.addEventListener('mouseleave',  stopNote)
 }
 
 document.addEventListener('keypress', ctrlTeclado)
-document.addEventListener('keyup', stopNote)
+document.addEventListener('keyup',() => stopNote())
 
 function ctrlTeclado(event) {
     let keyName = event.key
-    //let note = keymap[keyName]
-    let note = getNoteFromKey(keyName)
+    let note = document.querySelector('[data-note='+note+']')
+    key && key.classlist.add('pressed')
     playNote(note)
 
 }
@@ -42,5 +42,9 @@ function playNote(note) {
 }
 
 function stopNote() {
-    synth.triggerRelease();
+    let keyName = event.key
+    let note = getNoteFromKey(keyName)
+    let key = document.querySelector('[data-note='+note+']')
+    key && key.classlist.remove('pressed')
+    synth.triggerRelease(null);
 }

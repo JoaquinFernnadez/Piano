@@ -51,4 +51,11 @@ body{
 [data-note = 'A#4']{
     left: 298px;
 }
+.key :hover {
+    background-color: #7fbde0;
+
+}
+.key .active{
+    background-color: #7fbde0;
+}
     
